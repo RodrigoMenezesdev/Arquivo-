@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "question": "O que é considerado o indicador mais fidedigno de infecção em pacientes idosos, muitas vezes apresentando-se de forma atípica?",
+    "options": [
+      { "text": "Presença de febre alta.", "isCorrect": false, "rationale": "Em idosos, a febre pode estar ausente ou ser discreta devido à menor resposta inflamatória." },
+      { "text": "Aumento da frequência cardíaca e respiratória (taquicardia e taquipneia).", "isCorrect": true, "rationale": "A alteração dos sinais vitais, especialmente o aumento da frequência cardíaca e respiratória, é um dos primeiros e mais confiáveis indicadores de infecção ou sepse em idosos." },
+      { "text": "Rigidez de nuca.", "isCorrect": false, "rationale": "Rigidez de nuca é um sinal de meningite." },
+      { "text": "Erupções cutâneas generalizadas.", "isCorrect": false, "rationale": "Erupções cutâneas são menos comuns como indicador primário de infecção bacteriana ou viral em idosos." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O aumento da frequência cardíaca e respiratória é o indicador mais fidedigno." }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Qual é a via de administração de medicamentos caracterizada pela aplicação de substâncias na derme, com o objetivo de realizar testes de sensibilidade (Ex: PPD, alérgenos)?",
+    "options": [
+      { "text": "Intramuscular (IM).", "isCorrect": false, "rationale": "A via IM é aplicada no músculo, usada para absorção rápida e volumosa." },
+      { "text": "Subcutânea (SC).", "isCorrect": false, "rationale": "A via SC é aplicada no tecido adiposo, com absorção lenta e constante (Ex: Insulina)." },
+      { "text": "Endovenosa (EV).", "isCorrect": false, "rationale": "A via EV é aplicada na veia, com absorção imediata." },
+      { "text": "Intradérmica (ID).", "isCorrect": true, "rationale": "A via ID é aplicada logo abaixo da epiderme, na derme, e tem absorção lentíssima, sendo ideal para testes de hipersensibilidade e vacinas específicas (como a BCG)." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A via correta é a Intradérmica." }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Em relação à punção venosa periférica, o que o Técnico de Enfermagem deve fazer imediatamente após a retirada do bisel da agulha da veia?",
+    "options": [
+      { "text": "Retirar o garrote antes de pressionar o local.", "isCorrect": true, "rationale": "É fundamental retirar o garrote antes de pressionar o local para evitar a formação de hematoma e reduzir a pressão venosa, prevenindo sangramento excessivo após a compressão." },
+      { "text": "Pressionar o local com algodão seco por um minuto.", "isCorrect": false, "rationale": "Deve-se retirar o garrote antes de pressionar." },
+      { "text": "Aplicar calor local para facilitar a hemostasia.", "isCorrect": false, "rationale": "O calor é contraindicado, pois pode aumentar o fluxo sanguíneo e o hematoma." },
+      { "text": "Descartar a agulha no lixo comum.", "isCorrect": false, "rationale": "A agulha deve ser descartada imediatamente no coletor de material perfurocortante (caixa amarela ou de descarte seguro)." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O garrote deve ser retirado antes de pressionar." }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Qual é o principal objetivo do processo de esterilização de materiais hospitalares?",
+    "options": [
+      { "text": "Destruir apenas bactérias patogênicas.", "isCorrect": false, "rationale": "A esterilização vai além de bactérias e destrói todos os microrganismos." },
+      { "text": "Eliminar todos os microrganismos, incluindo esporos bacterianos.", "isCorrect": true, "rationale": "A esterilização é o processo de eliminação ou destruição de todas as formas de vida microbiana, incluindo esporos, o que a diferencia da desinfecção de alto nível." },
+      { "text": "Reduzir a carga microbiana para níveis aceitáveis.", "isCorrect": false, "rationale": "Essa é a definição de desinfecção ou antissepsia, não de esterilização." },
+      { "text": "Remover matéria orgânica de superfícies.", "isCorrect": false, "rationale": "Essa é a definição de limpeza, que precede a esterilização." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O objetivo é eliminar todos os microrganismos, incluindo esporos." }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Qual dos seguintes procedimentos está **DIRETAMENTE** relacionado aos 'Cinco Certos' na administração de medicamentos?",
+    "options": [
+      { "text": "Verificar a data de validade do medicamento antes de prepará-lo.", "isCorrect": true, "rationale": "O 'Medicamento Certo' implica na verificação do nome e da data de validade, garantindo que a substância administrada é a prevista e está em condições de uso." },
+      { "text": "Lavar as mãos após a administração.", "isCorrect": false, "rationale": "Lavar as mãos é uma regra de biossegurança (Primeiro Certo: Paciente Certo)." },
+      { "text": "Registrar o procedimento somente ao final do plantão.", "isCorrect": false, "rationale": "O registro deve ser feito imediatamente após a administração (Quinto Certo: Registro Certo)." },
+      { "text": "Utilizar luvas estéreis em todas as vias de administração.", "isCorrect": false, "rationale": "Luvas de procedimento (não estéreis) são suficientes para a maioria das administrações de rotina, exceto em procedimentos assépticos mais complexos." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Verificar a validade está diretamente ligado ao 'Medicamento Certo'." }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Um paciente adulto apresenta frequência respiratória (FR) de 28 incursões por minuto. Este achado é classificado como:",
+    "options": [
+      { "text": "Bradipneia.", "isCorrect": false, "rationale": "Bradipneia é a FR abaixo do normal (menos de 12 irpm em adultos)." },
+      { "text": "Eupneia.", "isCorrect": false, "rationale": "Eupneia é a FR normal (geralmente entre 12 e 20 irpm em adultos)." },
+      { "text": "Taquipneia.", "isCorrect": true, "rationale": "Taquipneia é a FR acima do normal (acima de 20 irpm em adultos)." },
+      { "text": "Dispneia.", "isCorrect": false, "rationale": "Dispneia é a dificuldade ou sensação de falta de ar, não a frequência em si." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A FR de 28 irpm é classificada como Taquipneia." }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Qual o local de aplicação mais recomendado e seguro para a administração de medicamentos por via intramuscular (IM) em pacientes adultos?",
+    "options": [
+      { "text": "Deltóide (músculo do braço).", "isCorrect": false, "rationale": "O deltóide é usado para volumes menores (máximo 2-3 ml) e é menos seguro que o ventroglúteo." },
+      { "text": "Dorso Glúteo (quadrante superior externo do glúteo).", "isCorrect": false, "rationale": "É um local com risco de lesão do nervo ciático e menos recomendado que o ventroglúteo." },
+      { "text": "Ventroglúteo (Região lateral do quadril).", "isCorrect": true, "rationale": "A região ventroglútea é considerada a mais segura para IM em adultos e crianças, pois possui uma camada muscular espessa e é livre de grandes vasos e nervos." },
+      { "text": "Vasto Lateral da Coxa.", "isCorrect": false, "rationale": "É a área preferencial em bebês e crianças pequenas, mas não a mais recomendada em adultos." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O local mais seguro para adultos é o Ventroglúteo." }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Segundo as normas de biossegurança, as agulhas utilizadas em procedimentos devem ser descartadas:",
+    "options": [
+      { "text": "No lixo comum após reencape manual.", "isCorrect": false, "rationale": "O reencape manual é proibido e aumenta o risco de acidentes com perfurocortantes." },
+      { "text": "Em recipiente rígido, com tampa e identificado como material infectante.", "isCorrect": false, "rationale": "Materiais rígidos são apenas para fluidos e secreções, não perfurocortantes." },
+      { "text": "Em coletor rígido e resistente à perfuração (Ex: 'Descartex' ou 'Caixa Amarela'), sem reencapar.", "isCorrect": true, "rationale": "Agulhas e outros materiais perfurocortantes devem ser descartados imediatamente após o uso em recipientes próprios, que garantem a segurança e evitam acidentes." },
+      { "text": "Em saco plástico branco leitoso, após serem quebradas.", "isCorrect": false, "rationale": "Quebrar agulhas também é proibido devido ao risco de projeção e acidentes." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O descarte deve ser feito em coletor rígido próprio (Descartex), sem reencapar." }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "A assistência de enfermagem a um paciente com restrição no leito (acamado) deve incluir a mudança de decúbito a cada 2 horas. Qual é o objetivo principal desta prática?",
+    "options": [
+      { "text": "Facilitar a alimentação oral do paciente.", "isCorrect": false, "rationale": "A mudança de decúbito não facilita a alimentação." },
+      { "text": "Prevenir a atrofia muscular dos membros inferiores.", "isCorrect": false, "rationale": "Isso é prevenido com exercícios de amplitude de movimento." },
+      { "text": "Prevenir úlceras por pressão (escaras) e complicações respiratórias.", "isCorrect": true, "rationale": "A mudança de decúbito alivia a pressão constante sobre proeminências ósseas e melhora a ventilação e circulação, prevenindo escaras e pneumonias." },
+      { "text": "Promover a evacuação intestinal regular.", "isCorrect": false, "rationale": "A evacuação é promovida com dieta e, se necessário, laxativos." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O objetivo é prevenir úlceras por pressão e complicações respiratórias." }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "O que significa o termo 'Taquicardia' na avaliação dos sinais vitais de um paciente adulto?",
+    "options": [
+      { "text": "Frequência respiratória baixa.", "isCorrect": false, "rationale": "Frequência respiratória baixa é bradipneia." },
+      { "text": "Pressão arterial elevada.", "isCorrect": false, "rationale": "Pressão arterial elevada é hipertensão." },
+      { "text": "Frequência cardíaca acima dos limites normais.", "isCorrect": true, "rationale": "Em adultos, é geralmente uma frequência cardíaca acima de 100 batimentos por minuto (bpm)." },
+      { "text": "Temperatura corporal abaixo dos limites normais.", "isCorrect": false, "rationale": "Temperatura corporal baixa é hipotermia." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Taquicardia significa frequência cardíaca elevada." }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Qual é a ordem correta para a retirada dos Equipamentos de Proteção Individual (EPIs) em um isolamento por precaução de contato?",
+    "options": [
+      { "text": "Luvas, Máscara, Óculos, Avental.", "isCorrect": false, "rationale": "A luva deve ser a primeira a ser removida para evitar contaminação do corpo." },
+      { "text": "Avental, Luvas, Máscara, Óculos.", "isCorrect": false, "rationale": "A luva deve ser removida antes do avental para evitar tocar a superfície contaminada do avental." },
+      { "text": "Luvas, Avental, Óculos de Proteção, Máscara.", "isCorrect": true, "rationale": "A sequência correta minimiza o risco de contaminação, removendo o EPI mais contaminado (luva), seguido pelo avental, óculos e, por último, a máscara/respirador." },
+      { "text": "Máscara, Óculos, Avental, Luvas.", "isCorrect": false, "rationale": "Máscara e Óculos são removidos depois das luvas e do avental." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A ordem correta é Luvas, Avental, Óculos, Máscara." }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Para a verificação da temperatura axilar, o termômetro deve ser mantido no local por um tempo mínimo de:",
+    "options": [
+      { "text": "1 minuto.", "isCorrect": false, "rationale": "O tempo mínimo para uma leitura precisa é de 3 a 5 minutos." },
+      { "text": "5 minutos.", "isCorrect": true, "rationale": "Embora 3 minutos seja o mínimo aceitável em alguns protocolos, 5 minutos é o tempo ideal para garantir que o termômetro digital ou de mercúrio atinja a temperatura central estável da axila, garantindo a leitura mais fidedigna." },
+      { "text": "10 minutos.", "isCorrect": false, "rationale": "10 minutos é excessivo e desnecessário." },
+      { "text": "2 minutos.", "isCorrect": false, "rationale": "2 minutos pode ser insuficiente para estabilizar a temperatura." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O tempo mínimo recomendado para leitura confiável é de 5 minutos." }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Qual é a principal responsabilidade do Técnico de Enfermagem em relação à infusão de Hemocomponentes (Ex: Transfusão de Sangue)?",
+    "options": [
+      { "text": "Realizar o teste de compatibilidade ABO/Rh na beira do leito.", "isCorrect": false, "rationale": "O teste de compatibilidade é de responsabilidade da equipe do Banco de Sangue." },
+      { "text": "Prescrever a velocidade de infusão do sangue.", "isCorrect": false, "rationale": "A prescrição é responsabilidade do médico." },
+      { "text": "Observar rigorosamente o paciente durante os primeiros 10 a 15 minutos da infusão para detectar reações transfusionais.", "isCorrect": true, "rationale": "A maioria das reações transfusionais graves ocorre logo no início da infusão. A vigilância atenta do técnico é crucial para interromper a transfusão e notificar imediatamente o enfermeiro/médico em caso de reação." },
+      { "text": "Liberar o paciente para deambular imediatamente após o início da transfusão.", "isCorrect": false, "rationale": "O paciente deve ser mantido em observação no leito." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A observação rigorosa nos primeiros 15 minutos é fundamental." }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "A respeito do manuseio de frascos de insulina NPH (de ação intermediária), o que o Técnico de Enfermagem deve fazer antes da aspiração?",
+    "options": [
+      { "text": "Agitar vigorosamente o frasco para misturar a solução.", "isCorrect": false, "rationale": "Agitar vigorosamente pode causar bolhas e desnaturação da proteína." },
+      { "text": "Esfregar o frasco entre as mãos (rolar) para homogeneizar a suspensão.", "isCorrect": true, "rationale": "A insulina NPH é uma suspensão. É necessário 'rolar' o frasco delicadamente entre as palmas das mãos para misturar o componente sem provocar espuma ou desnaturação, garantindo a dose correta." },
+      { "text": "Aquecer o frasco em banho-maria.", "isCorrect": false, "rationale": "O aquecimento em excesso pode alterar a ação da insulina." },
+      { "text": "Aspirar ar equivalente à dose e injetá-lo no frasco.", "isCorrect": false, "rationale": "Injetar ar é o primeiro passo, mas não substitui a homogeneização." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O frasco deve ser rolado para homogeneizar a suspensão." }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Qual o significado da coloração amarela utilizada nas sacolas de lixo hospitalar?",
+    "options": [
+      { "text": "Lixo comum (resíduos domésticos).", "isCorrect": false, "rationale": "O lixo comum é descartado em sacos pretos ou cinzas." },
+      { "text": "Resíduos biológicos (infectantes) do Grupo A.", "isCorrect": false, "rationale": "Resíduos biológicos (infectantes) são descartados em sacos brancos leitosos." },
+      { "text": "Resíduos perfurocortantes do Grupo E.", "isCorrect": false, "rationale": "Perfurocortantes são descartados em coletores rígidos (Ex: Descartex)." },
+      { "text": "Resíduos químicos, como medicamentos quimioterápicos e substâncias perigosas do Grupo B.", "isCorrect": true, "rationale": "O saco amarelo é geralmente reservado para resíduos químicos, especialmente os quimioterápicos, que exigem tratamento especial devido à sua toxicidade e risco à saúde pública." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O saco amarelo é usado para resíduos químicos, como quimioterápicos." }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "O que deve ser a primeira ação do Técnico de Enfermagem ao sofrer um acidente com material perfurocortante (Ex: picada de agulha)?",
+    "options": [
+      { "text": "Procurar imediatamente a chefia para relatar o ocorrido.", "isCorrect": false, "rationale": "A primeira ação deve ser o cuidado com a ferida." },
+      { "text": "Realizar a coleta de sangue para exames imediatos.", "isCorrect": false, "rationale": "A coleta de sangue é o próximo passo, após os primeiros socorros." },
+      { "text": "Lavar o local do ferimento imediatamente com água e sabão ou solução antisséptica, e estimular o sangramento.", "isCorrect": true, "rationale": "A limpeza imediata do local do ferimento reduz a carga viral/microbiana, minimizando o risco de contaminação antes de buscar o protocolo de Profilaxia Pós-Exposição (PEP)." },
+      { "text": "Aplicar álcool 70% na ferida.", "isCorrect": false, "rationale": "O álcool pode ser menos eficaz que água e sabão na redução da carga microbiana." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Lavar o local com água e sabão e estimular o sangramento é a primeira ação." }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Qual o propósito da técnica de 'Z-Track' na aplicação de injeção intramuscular?",
+    "options": [
+      { "text": "Aumentar a velocidade de absorção do medicamento.", "isCorrect": false, "rationale": "A técnica Z-Track não acelera a absorção." },
+      { "text": "Garantir que o medicamento seja depositado no tecido subcutâneo.", "isCorrect": false, "rationale": "O objetivo é o tecido muscular." },
+      { "text": "Evitar o refluxo do medicamento irritante para o tecido subcutâneo, minimizando a dor e a irritação local.", "isCorrect": true, "rationale": "A técnica consiste em tracionar a pele antes da injeção, criando um caminho em 'Z' que se sela quando a agulha é removida, impedindo que o medicamento escape do músculo." },
+      { "text": "Reduzir o risco de lesão do nervo ciático.", "isCorrect": false, "rationale": "A lesão do nervo ciático é evitada com a escolha do local de aplicação (Ventroglúteo)." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O propósito é evitar o refluxo de medicamentos irritantes para o subcutâneo." }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Na administração de medicamentos por via sublingual, o paciente deve ser orientado a:",
+    "options": [
+      { "text": "Engolir o comprimido imediatamente com água.", "isCorrect": false, "rationale": "Engolir o medicamento anula o efeito da via sublingual, que exige absorção pela mucosa." },
+      { "text": "Mastigar o comprimido antes de colocar sob a língua.", "isCorrect": false, "rationale": "Mastigar o medicamento também anula o efeito da via sublingual." },
+      { "text": "Colocar o medicamento sob a língua e evitar engolir saliva até a dissolução completa.", "isCorrect": true, "rationale": "A mucosa sublingual é altamente vascularizada, permitindo a absorção rápida e direta na corrente sanguínea. O paciente deve evitar engolir para que o medicamento não seja inativado pelo trato gastrointestinal." },
+      { "text": "Aspirar o medicamento com uma seringa sem agulha.", "isCorrect": false, "rationale": "A via sublingual é geralmente para comprimidos, não soluções." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O paciente deve colocar o medicamento sob a língua e esperar a dissolução." }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Qual a medida de higiene pessoal considerada a mais importante e isolada na prevenção e controle das infecções relacionadas à assistência à saúde (IRAS)?",
+    "options": [
+      { "text": "Uso de máscara N95.", "isCorrect": false, "rationale": "O uso de máscara é crucial, mas não é a medida mais importante isoladamente." },
+      { "text": "Uso de luvas estéreis em todos os procedimentos.", "isCorrect": false, "rationale": "O uso de luvas não substitui a lavagem das mãos e nem todos os procedimentos exigem luvas estéreis." },
+      { "text": "Higienização das mãos (lavagem com água e sabão ou fricção com álcool gel 70%).", "isCorrect": true, "rationale": "A higienização correta e nos momentos certos (antes e após o contato com o paciente/ambiente) é a medida mais eficaz e custo-efetiva na quebra da cadeia de transmissão de infecções." },
+      { "text": "Esterilização de todos os materiais de uso único.", "isCorrect": false, "rationale": "Materiais de uso único são descartados, não esterilizados." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A higienização das mãos é a medida mais importante." }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "Em um paciente com hipertermia (febre), quais medidas não farmacológicas podem ser adotadas pelo Técnico de Enfermagem para auxiliar na redução da temperatura corporal?",
+    "options": [
+      { "text": "Administração de antitérmico por via intramuscular.", "isCorrect": false, "rationale": "Isso é uma medida farmacológica, e a via IM não é a preferencial." },
+      { "text": "Aplicação de compressas frias nas axilas e região inguinal e despir ou cobrir o paciente com lençol fino.", "isCorrect": true, "rationale": "O resfriamento dessas áreas (grandes vasos) e a remoção de roupas excessivas promovem a perda de calor por condução e radiação, auxiliando o antitérmico." },
+      { "text": "Banho morno a quente.", "isCorrect": false, "rationale": "Banhos quentes devem ser evitados, pois podem aumentar a temperatura corporal." },
+      { "text": "Aumentar a temperatura do ambiente.", "isCorrect": false, "rationale": "O ambiente deve ser mantido fresco." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A aplicação de compressas frias e o controle de roupas/cobertores são as medidas não farmacológicas corretas." }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Qual é a definição correta do termo 'Bradicardia'?",
+    "options": [
+      { "text": "Aumento da pressão arterial.", "isCorrect": false, "rationale": "Aumento da pressão arterial é hipertensão." },
+      { "text": "Diminuição da frequência respiratória.", "isCorrect": false, "rationale": "Diminuição da frequência respiratória é bradipneia." },
+      { "text": "Diminuição da frequência cardíaca abaixo do limite normal (geralmente < 60 bpm em adultos).", "isCorrect": true, "rationale": "Bradicardia é a diminuição do número de batimentos cardíacos por minuto, sendo um achado clínico importante que requer investigação e monitoramento." },
+      { "text": "Ausência de respiração.", "isCorrect": false, "rationale": "Ausência de respiração é apneia." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Bradicardia é a diminuição da frequência cardíaca." }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "No que consiste a técnica de 'Palpação' na realização do exame físico?",
+    "options": [
+      { "text": "Avaliação do paciente utilizando o sentido da audição (Ex: ausculta pulmonar).", "isCorrect": false, "rationale": "Isso é Ausculta." },
+      { "text": "Avaliação do paciente utilizando o sentido da visão (Ex: observação da coloração da pele).", "isCorrect": false, "rationale": "Isso é Inspeção." },
+      { "text": "Avaliação do paciente utilizando o sentido do tato (Ex: verificação de pulso, temperatura e presença de massas).", "isCorrect": true, "rationale": "A palpação é o uso das mãos para examinar a textura, temperatura, umidade, turgor, massas, dor e outros aspectos físicos do paciente." },
+      { "text": "Avaliação do paciente por meio de batidas suaves na superfície corporal (Ex: percussão abdominal).", "isCorrect": false, "rationale": "Isso é Percussão." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A Palpação é a avaliação pelo tato." }
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Qual o cuidado essencial de enfermagem que deve ser prestado antes da administração de medicamentos por via oral (VO)?",
+    "options": [
+      { "text": "Verificar se o paciente está em jejum absoluto.", "isCorrect": false, "rationale": "O jejum não é necessário para todos os medicamentos VO." },
+      { "text": "Auscultar os sons abdominais para verificar a motilidade intestinal.", "isCorrect": false, "rationale": "A ausculta é para avaliação, mas não essencial antes de cada VO." },
+      { "text": "Garantir que o paciente esteja consciente e com o reflexo de deglutição preservado (sem disfagia).", "isCorrect": true, "rationale": "A administração oral só é segura se o paciente puder engolir sem risco de aspiração para as vias aéreas." },
+      { "text": "Puncionar um acesso venoso periférico de segurança.", "isCorrect": false, "rationale": "O acesso venoso é desnecessário para medicamentos VO de rotina." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O cuidado essencial é garantir que o paciente esteja consciente e com capacidade de deglutir." }
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Qual o significado da sigla CTI, frequentemente utilizada no ambiente hospitalar?",
+    "options": [
+      { "text": "Centro de Triagem e Imunização.", "isCorrect": false, "rationale": "O Centro de Triagem lida com avaliação inicial." },
+      { "text": "Centro de Terapia Intensiva.", "isCorrect": true, "rationale": "CTI é o acrônimo mais comum para a unidade de tratamento de pacientes graves com monitoramento e suporte avançado de vida." },
+      { "text": "Centro de Treinamento e Instrução.", "isCorrect": false, "rationale": "O CTI é uma unidade assistencial, não de treinamento." },
+      { "text": "Centro Técnico de Imagem.", "isCorrect": false, "rationale": "O CTI é uma unidade de internação, não de diagnóstico." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A sigla CTI significa Centro de Terapia Intensiva." }
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Qual o objetivo da aspiração do êmbolo (puxar o êmbolo para trás) antes da administração de uma injeção intramuscular (IM)?",
+    "options": [
+      { "text": "Garantir que o medicamento seja depositado na derme.", "isCorrect": false, "rationale": "A derme é a via ID." },
+      { "text": "Reduzir a dor no local da injeção.", "isCorrect": false, "rationale": "A dor é reduzida pela técnica rápida e relaxamento muscular." },
+      { "text": "Verificar se a agulha atingiu acidentalmente um vaso sanguíneo (Teste de Aspiração).", "isCorrect": true, "rationale": "A presença de sangue na seringa após a aspiração indica que a agulha está em um vaso, exigindo a retirada imediata da agulha para evitar a injeção endovenosa acidental do medicamento IM." },
+      { "text": "Acelerar a absorção do medicamento.", "isCorrect": false, "rationale": "A aspiração não afeta a velocidade de absorção." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O objetivo é verificar se a agulha atingiu um vaso sanguíneo." }
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Qual dos seguintes é um sinal precoce e comum de Hipoglicemia (baixo nível de açúcar no sangue)?",
+    "options": [
+      { "text": "Hálito cetônico (cheiro de frutas podres).", "isCorrect": false, "rationale": "Hálito cetônico é sinal de Cetoacidose Diabética (hiperglicemia grave)." },
+      { "text": "Pele quente e seca.", "isCorrect": false, "rationale": "Pele quente e seca é sinal de Hiperglicemia." },
+      { "text": "Sudorese fria, tremores, taquicardia e confusão mental.", "isCorrect": true, "rationale": "A hipoglicemia ativa o sistema nervoso simpático, levando a manifestações adrenérgicas como sudorese, tremores e taquicardia. A confusão mental é um sinal neuroglicopênico." },
+      { "text": "Respiração de Cheyne-Stokes.", "isCorrect": false, "rationale": "É um tipo de respiração irregular associada a condições neurológicas ou cardíacas graves." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Sudorese fria, tremores e taquicardia são sinais precoces de hipoglicemia." }
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Em qual posição o paciente deve ser colocado para a administração de um enema (clister) de retenção?",
+    "options": [
+      { "text": "Posição de Fowler (paciente semi-sentado).", "isCorrect": false, "rationale": "Fowler é usada para alimentação e conforto respiratório." },
+      { "text": "Decúbito dorsal (barriga para cima).", "isCorrect": false, "rationale": "O decúbito dorsal não facilita o acesso retal nem a distribuição da solução." },
+      { "text": "Posição de Sims ou Decúbito Lateral Esquerdo, com o joelho direito flexionado.", "isCorrect": true, "rationale": "Essa posição (Sims) facilita a passagem da sonda e o fluxo da solução pelo sigmoide e cólon descendente, seguindo a anatomia intestinal." },
+      { "text": "Decúbito ventral (barriga para baixo).", "isCorrect": false, "rationale": "O decúbito ventral dificulta o procedimento." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A posição correta é a de Sims ou Decúbito Lateral Esquerdo." }
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Qual a principal complicação que a falta de assepsia adequada na punção venosa periférica pode causar?",
+    "options": [
+      { "text": "Aumento da pressão arterial.", "isCorrect": false, "rationale": "A falta de assepsia não causa aumento da pressão arterial." },
+      { "text": "Apneia.", "isCorrect": false, "rationale": "Apneia é a ausência de respiração." },
+      { "text": "Fleite e Infecção do local da punção (Flebite e/ou Sepse).", "isCorrect": true, "rationale": "A quebra da técnica asséptica introduz microrganismos na corrente sanguínea ou no tecido adjacente, podendo causar infecção local (flebite) ou sistêmica (sepse)." },
+      { "text": "Hipotermia.", "isCorrect": false, "rationale": "Hipotermia é a baixa temperatura corporal." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A principal complicação é a Flebite e a Infecção do local." }
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Qual o volume máximo recomendado para a aplicação de uma injeção por via Intramuscular (IM) no músculo Deltóide (braço) em um adulto?",
+    "options": [
+      { "text": "5 ml.", "isCorrect": false, "rationale": "5 ml é muito volume para o deltóide e aumenta o risco de lesão." },
+      { "text": "10 ml.", "isCorrect": false, "rationale": "10 ml é excessivo para qualquer músculo IM e pode causar necrose." },
+      { "text": "2 a 3 ml.", "isCorrect": true, "rationale": "Devido ao tamanho e à proximidade com nervos e vasos, o deltóide deve receber um volume limitado. A maioria dos protocolos recomenda um volume máximo de 2 ml, sendo 3 ml o limite superior aceitável em raras exceções." },
+      { "text": "0,1 ml.", "isCorrect": false, "rationale": "0,1 ml é o volume típico da via Intradérmica." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O volume máximo recomendado é de 2 a 3 ml." }
+    ]
+  },
+  {
+    "id": 30,
+    "question": "O que o Técnico de Enfermagem deve fazer antes de iniciar uma alimentação por sonda nasogástrica ou nasoenteral?",
+    "options": [
+      { "text": "Aspirar o conteúdo gástrico e injetá-lo de volta imediatamente, sem medir o resíduo.", "isCorrect": false, "rationale": "O resíduo deve ser medido." },
+      { "text": "Verificar o posicionamento correto da sonda (ausculta de ar e/ou medição do resíduo gástrico) e elevar a cabeceira do leito.", "isCorrect": true, "rationale": "A verificação do posicionamento impede que a dieta seja administrada nos pulmões (complicação grave). A elevação da cabeceira (> 30-45°) é essencial para prevenir o refluxo e a broncoaspiração." },
+      { "text": "Colocar o paciente em decúbito dorsal (barriga para cima).", "isCorrect": false, "rationale": "A posição deitada aumenta o risco de broncoaspiração." },
+      { "text": "Administrar o volume total da dieta de uma só vez (bolus rápido).", "isCorrect": false, "rationale": "A velocidade rápida pode causar diarreia e desconforto." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "É crucial verificar o posicionamento da sonda e elevar a cabeceira do leito." }
+    ]
+  },
+  {
+    "id": 31,
+    "question": "Qual é a principal indicação para o uso de luvas estéreis pelo Técnico de Enfermagem?",
+    "options": [
+      { "text": "Na higienização de pacientes acamados.", "isCorrect": false, "rationale": "Para a higiene, usam-se luvas de procedimento (não estéreis)." },
+      { "text": "Na administração de qualquer injeção intramuscular.", "isCorrect": false, "rationale": "Injeções IM/SC/ID usam luvas de procedimento (não estéreis)." },
+      { "text": "Em procedimentos invasivos que exigem técnica asséptica rigorosa (Ex: Cateterismo vesical de demora, curativos em feridas profundas).", "isCorrect": true, "rationale": "Luvas estéreis são usadas em procedimentos que envolvem o contato direto com áreas estéreis do corpo ou cavidades normalmente livres de microrganismos, prevenindo infecção." },
+      { "text": "Na coleta de sangue venoso periférico.", "isCorrect": false, "rationale": "A coleta de sangue usa luvas de procedimento (não estéreis)." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Luvas estéreis são para procedimentos invasivos que exigem técnica asséptica." }
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Qual dos seguintes sinais e sintomas é característico da dor do tipo 'Cólica'?",
+    "options": [
+      { "text": "Dor intensa e contínua, que não melhora com o movimento.", "isCorrect": false, "rationale": "Essa é uma dor profunda e constante." },
+      { "text": "Dor em queimação, que irradia para os membros.", "isCorrect": false, "rationale": "Essa é uma dor neuropática." },
+      { "text": "Dor que se manifesta em espasmos intermitentes, com períodos de alívio e exacerbação, geralmente associada a órgãos tubulares.", "isCorrect": true, "rationale": "A dor em cólica é causada pela contração intensa e rítmica da musculatura lisa de órgãos como intestino, ureter ou vesícula biliar, manifestando-se em ondas de dor e alívio." },
+      { "text": "Dor pontual e que piora com a tosse ou o movimento.", "isCorrect": false, "rationale": "Essa é uma dor mais localizada e parietal." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A dor tipo cólica é em espasmos intermitentes." }
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Qual o ângulo correto para a aplicação de injeção por via Subcutânea (SC) em um paciente com boa massa adiposa (tecido gorduroso)?",
+    "options": [
+      { "text": "90 graus.", "isCorrect": false, "rationale": "90 graus é usado para injeções IM e SC em pacientes obesos." },
+      { "text": "45 graus.", "isCorrect": true, "rationale": "O ângulo de 45 graus é o padrão para a via SC em pacientes com camada adiposa moderada, garantindo que a ponta da agulha atinja o tecido subcutâneo e não o músculo." },
+      { "text": "15 graus.", "isCorrect": false, "rationale": "15 graus é o ângulo da via ID." },
+      { "text": "30 graus.", "isCorrect": false, "rationale": "30 graus é um ângulo incomum para SC." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O ângulo correto para via SC em pacientes com boa massa adiposa é 45 graus." }
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Qual a principal complicação que a elevação da cabeceira do leito a menos de 30 graus pode causar em um paciente em uso de Sonda Nasoenteral (SNE)?",
+    "options": [
+      { "text": "Lesão por pressão na região sacral.", "isCorrect": false, "rationale": "Lesão por pressão é causada por pressão e cisalhamento." },
+      { "text": "Hipoglicemia.", "isCorrect": false, "rationale": "Hipoglicemia é causada por desequilíbrio entre insulina e glicose." },
+      { "text": "Broncoaspiração e pneumonia aspirativa.", "isCorrect": true, "rationale": "A posição supina ou semi-sentada em ângulo muito baixo facilita o refluxo do conteúdo gástrico para o esôfago e, posteriormente, para os pulmões (aspiração), o que é uma complicação grave em pacientes com SNE." },
+      { "text": "Dificuldade na deambulação.", "isCorrect": false, "rationale": "A deambulação não é afetada pela cabeceira baixa." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A complicação é a broncoaspiração e pneumonia aspirativa." }
+    ]
+  },
+  {
+    "id": 35,
+    "question": "O que a enfermagem deve priorizar no cuidado de um paciente que apresenta Incontinência Urinária?",
+    "options": [
+      { "text": "Restrição de líquidos para diminuir a micção.", "isCorrect": false, "rationale": "A restrição hídrica pode causar desidratação e é contraindicada." },
+      { "text": "Monitoramento constante da temperatura corporal.", "isCorrect": false, "rationale": "O monitoramento da temperatura não é a prioridade na incontinência." },
+      { "text": "Manter a pele da região perineal limpa e seca e realizar a troca imediata de fraldas ou roupas úmidas.", "isCorrect": true, "rationale": "A prioridade é a integridade cutânea, pois a umidade constante da urina e das fezes é um fator de risco primário para dermatite associada à umidade e úlceras por pressão." },
+      { "text": "Cateterismo vesical de demora em todos os casos.", "isCorrect": false, "rationale": "O cateterismo vesical de demora aumenta o risco de infecção urinária e deve ser evitado se possível." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A prioridade é manter a pele limpa e seca e realizar a troca imediata de roupas/fraldas úmidas." }
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Qual o significado de 'Apneia' na avaliação respiratória?",
+    "options": [
+      { "text": "Respiração superficial e lenta.", "isCorrect": false, "rationale": "Respiração lenta é bradipneia." },
+      { "text": "Dificuldade para respirar (falta de ar).", "isCorrect": false, "rationale": "Dificuldade para respirar é dispneia." },
+      { "text": "Parada temporária ou permanente da respiração.", "isCorrect": true, "rationale": "Apneia é a cessação completa do movimento respiratório, exigindo intervenção imediata, pois leva à hipóxia." },
+      { "text": "Respiração ruidosa (estertores).", "isCorrect": false, "rationale": "Estertores são sons anormais." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Apneia significa parada da respiração." }
+    ]
+  },
+  {
+    "id": 37,
+    "question": "O que deve ser feito com o excesso de ar que fica no equipo de soro antes de conectá-lo ao acesso venoso do paciente?",
+    "options": [
+      { "text": "Deve ser injetado lentamente na veia para evitar a formação de bolhas.", "isCorrect": false, "rationale": "Isso pode causar embolia gasosa." },
+      { "text": "Pode ser ignorado, pois o ar será absorvido pela corrente sanguínea.", "isCorrect": false, "rationale": "O ar não deve ser injetado na veia." },
+      { "text": "Deve ser completamente retirado (preenchimento do equipo) para prevenir a Embolia Gasosa.", "isCorrect": true, "rationale": "A presença de ar no equipo, se infundida na veia, pode levar a uma embolia gasosa, uma complicação potencialmente fatal. A purga do equipo é essencial." },
+      { "text": "Deve ser utilizado para lavar a linha antes de iniciar a infusão.", "isCorrect": false, "rationale": "O preenchimento do equipo é feito com a solução." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O ar deve ser completamente retirado para prevenir a Embolia Gasosa." }
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Qual o ângulo recomendado para a punção venosa periférica em adultos?",
+    "options": [
+      { "text": "90 graus.", "isCorrect": false, "rationale": "90 graus é o ângulo da via IM." },
+      { "text": "45 graus.", "isCorrect": false, "rationale": "45 graus é o ângulo da via SC." },
+      { "text": "10 a 30 graus.", "isCorrect": true, "rationale": "Um ângulo baixo (10 a 30 graus) permite que o bisel da agulha penetre a pele e atinja a veia com segurança, sem transfixá-la (atravessá-la)." },
+      { "text": "5 graus.", "isCorrect": false, "rationale": "5 graus é muito baixo e pode apenas deslizar sob a pele." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O ângulo recomendado para punção venosa é de 10 a 30 graus." }
+    ]
+  },
+  {
+    "id": 39,
+    "question": "O que a presença de Edema (inchaço) sugere na avaliação física do paciente?",
+    "options": [
+      { "text": "Desidratação grave.", "isCorrect": false, "rationale": "A desidratação causa turgor de pele diminuído e pele seca." },
+      { "text": "Acúmulo de líquido no espaço intersticial (terceiro espaço).", "isCorrect": true, "rationale": "O edema é causado pelo excesso de líquido retido nos tecidos, frequentemente associado a problemas cardíacos, renais, hepáticos ou insuficiência venosa." },
+      { "text": "Febre e infecção localizada.", "isCorrect": false, "rationale": "Febre e infecção localizada causam inflamação, que pode incluir edema, mas o edema por si só indica acúmulo de líquido." },
+      { "text": "Hemorragia interna.", "isCorrect": false, "rationale": "Hemorragia interna não se manifesta como edema generalizado, mas sim como choque hipovolêmico." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O edema sugere acúmulo de líquido no espaço intersticial." }
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Qual o objetivo de realizar o 'banho de leito' em um paciente acamado grave?",
+    "options": [
+      { "text": "Apenas reduzir a temperatura corporal.", "isCorrect": false, "rationale": "Reduzir a temperatura é um objetivo secundário em caso de febre." },
+      { "text": "Facilitar a micção e a defecação.", "isCorrect": false, "rationale": "Micção e defecação são facilitadas com o comadre e o papagaio." },
+      { "text": "Promover a higiene, o conforto, a estimulação da circulação e a avaliação da pele (prevenção de úlceras por pressão).", "isCorrect": true, "rationale": "O banho de leito é um momento crucial para o cuidado integral, incluindo higiene, conforto, massagem de áreas de pressão e inspeção detalhada da pele, que previne complicações." },
+      { "text": "Administrar medicamentos por via tópica.", "isCorrect": false, "rationale": "O banho de leito não se limita à administração de medicamentos." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O objetivo é a higiene, conforto, circulação e avaliação da pele." }
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Qual o significado da sigla **TBC** na documentação de enfermagem?",
+    "options": [
+      { "text": "Terapia de Baixa Concentração.", "isCorrect": false, "rationale": "Não é um termo padrão para TBC." },
+      { "text": "Taxa de Batimentos Cardíacos.", "isCorrect": false, "rationale": "Taxa de Batimentos Cardíacos é FC (Frequência Cardíaca)." },
+      { "text": "Tuberculose.", "isCorrect": true, "rationale": "TBC é o acrônimo universalmente utilizado para designar a doença infecciosa Tuberculose na área da saúde." },
+      { "text": "Terapia de Balanço de Calor.", "isCorrect": false, "rationale": "Não é um termo padrão para TBC." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A sigla TBC significa Tuberculose." }
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Qual a principal função do profissional Técnico de Enfermagem durante uma Parada Cardiorrespiratória (PCR)?",
+    "options": [
+      { "text": "Realizar a intubação orotraqueal do paciente.", "isCorrect": false, "rationale": "A intubação é um procedimento médico ou, em alguns protocolos, do enfermeiro." },
+      { "text": "Aplicar o choque elétrico (Desfibrilação).", "isCorrect": false, "rationale": "A desfibrilação é realizada pelo médico ou, em alguns protocolos, pelo enfermeiro." },
+      { "text": "Realizar as compressões torácicas de alta qualidade e com o mínimo de interrupções.", "isCorrect": true, "rationale": "O Técnico de Enfermagem é um membro crucial da equipe de PCR, sendo o responsável pelas compressões torácicas, que são o elemento mais importante para a circulação sanguínea durante a parada." },
+      { "text": "Prescrever os medicamentos de ressuscitação.", "isCorrect": false, "rationale": "A prescrição é responsabilidade do médico." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A principal função é realizar as compressões torácicas." }
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Qual é a principal contraindicação para a verificação da pressão arterial (PA) no membro superior direito?",
+    "options": [
+      { "text": "Diabetes Mellitus.", "isCorrect": false, "rationale": "Diabetes não contraindica a verificação da PA no braço direito." },
+      { "text": "Presença de fístula arteriovenosa (FAV) para hemodiálise ou história de Mastectomia (retirada da mama) do lado direito.", "isCorrect": true, "rationale": "Nessas condições, o manguito pode danificar a fístula ou causar Linfedema (inchaço) no braço pós-mastectomia. Nesses casos, a PA deve ser verificada no braço oposto." },
+      { "text": "Uso de medicamento para dor (analgésico).", "isCorrect": false, "rationale": "O uso de analgésico não contraindica a verificação da PA." },
+      { "text": "Hipertensão arterial sistêmica.", "isCorrect": false, "rationale": "A hipertensão exige o monitoramento da PA, e não a contraindica." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "As principais contraindicações são a presença de FAV ou história de Mastectomia no lado direito." }
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Qual é a principal diferença entre um Curativo Limpo e um Curativo Contaminado (ou infectado) em termos de técnica de enfermagem?",
+    "options": [
+      { "text": "O Curativo Limpo exige o uso de luvas estéreis, e o Contaminado, apenas luvas de procedimento.", "isCorrect": false, "rationale": "A regra é o contrário: contaminados geralmente exigem maior proteção e técnica asséptica." },
+      { "text": "A ordem de limpeza: o Curativo Limpo é limpo do menos contaminado para o mais contaminado, e o Contaminado é limpo do mais contaminado para o menos contaminado.", "isCorrect": false, "rationale": "A limpeza é sempre do menos para o mais contaminado." },
+      { "text": "O Curativo Limpo é realizado com técnica asséptica (estéril ou limpa), e o Contaminado exige o uso de técnica de barreira e maior atenção à remoção de exsudato e detritos.", "isCorrect": true, "rationale": "Ambos exigem técnica asséptica, mas o curativo contaminado foca na remoção do exsudato e controle da infecção, usando EPIs adequados para a proteção do profissional, enquanto o limpo foca na proteção da ferida contra contaminação externa." },
+      { "text": "A Curativo Limpo é trocado a cada 24 horas, e o Contaminado, a cada 48 horas.", "isCorrect": false, "rationale": "A frequência de troca varia conforme o tipo de ferida e a quantidade de exsudato, e não o tipo." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A principal diferença está na técnica de barreira e na prioridade de controle de infecção no contaminado." }
+    ]
+  },
+  {
+    "id": 45,
+    "question": "O que a equipe de Enfermagem deve fazer imediatamente ao observar que um paciente em uso de oxigenoterapia por cateter nasal está apresentando cianose e esforço respiratório acentuado?",
+    "options": [
+      { "text": "Administrar um medicamento sedativo por via IM.", "isCorrect": false, "rationale": "Sedação não trata a causa da insuficiência respiratória." },
+      { "text": "Aumentar a vazão de oxigênio do cateter nasal e acionar o enfermeiro ou médico imediatamente.", "isCorrect": true, "rationale": "A cianose e o esforço respiratório são sinais de insuficiência respiratória aguda. Aumentar a oferta de O2 é a primeira intervenção, seguida pela comunicação imediata à equipe para avaliação e intervenção médica." },
+      { "text": "Retirar o cateter nasal e suspender a oxigenoterapia.", "isCorrect": false, "rationale": "Suspender o O2 pioraria o quadro." },
+      { "text": "Realizar a punção venosa periférica para coleta de exames.", "isCorrect": false, "rationale": "A coleta de exames é secundária à intervenção para salvar a vida." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Aumentar a vazão de oxigênio e acionar a equipe imediatamente é a ação correta." }
+    ]
+  },
+  {
+    "id": 46,
+    "question": "O que a verificação do 'enchimento capilar' (teste da perfusão capilar) avalia?",
+    "options": [
+      { "text": "A permeabilidade das vias aéreas superiores.", "isCorrect": false, "rationale": "Isso é avaliado por inspeção e ausculta." },
+      { "text": "A função renal do paciente.", "isCorrect": false, "rationale": "A função renal é avaliada por exames de urina e sangue." },
+      { "text": "A eficácia da circulação sanguínea periférica e a perfusão tecidual.", "isCorrect": true, "rationale": "O teste de enchimento capilar (tempo de retorno do sangue após a compressão da unha ou pele) é um indicador rápido e simples da condição circulatória e do estado de choque ou desidratação." },
+      { "text": "A função do sistema nervoso central.", "isCorrect": false, "rationale": "O sistema nervoso é avaliado pelo nível de consciência e reflexos." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "O enchimento capilar avalia a circulação sanguínea periférica." }
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Qual a principal causa de Infecção do Trato Urinário (ITU) associada ao uso de Cateter Vesical de Demora (CVD)?",
+    "options": [
+      { "text": "O uso de medicamentos diuréticos.", "isCorrect": false, "rationale": "O uso de diuréticos não causa ITU." },
+      { "text": "A idade avançada do paciente.", "isCorrect": false, "rationale": "A idade avançada é um fator de risco, mas não a causa principal." },
+      { "text": "A quebra da técnica asséptica na inserção e/ou o tempo prolongado de permanência do cateter.", "isCorrect": true, "rationale": "O cateterismo é um procedimento invasivo. A inserção não asséptica e, principalmente, a longa permanência facilitam a colonização bacteriana e a ascensão dos microrganismos pela uretra até a bexiga." },
+      { "text": "O baixo consumo de líquidos (desidratação).", "isCorrect": false, "rationale": "O baixo consumo de líquidos é um fator de risco, mas não a causa principal." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A principal causa é a quebra da técnica asséptica e o tempo prolongado de permanência do cateter." }
+    ]
+  },
+  {
+    "id": 48,
+    "question": "O que significa 'NPO' ou 'Jejum' na prescrição médica ou de enfermagem?",
+    "options": [
+      { "text": "Necessita de Pouca Oxigenioterapia.", "isCorrect": false, "rationale": "Não é um termo de oxigenioterapia." },
+      { "text": "Administração de Níveis de Pressão Ótima.", "isCorrect": false, "rationale": "Não é um termo de pressão arterial." },
+      { "text": "Nada por Via Oral (do latim *Nihil Per Os*).", "isCorrect": true, "rationale": "NPO (ou Jejum) indica que o paciente não deve receber nenhum alimento, líquido ou medicamento pela boca, geralmente antes de cirurgias, exames específicos ou em casos de risco de aspiração." },
+      { "text": "Novo Protocolo Operacional.", "isCorrect": false, "rationale": "Não é um termo administrativo." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "NPO significa Nada por Via Oral." }
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Qual o cuidado de enfermagem essencial para prevenir a obstrução de Sondas Nasogástricas ou Nasoenterais (SNE/SNG)?",
+    "options": [
+      { "text": "Administrar medicamentos triturados e misturados a soluções oleosas.", "isCorrect": false, "rationale": "Soluções oleosas e medicamentos triturados sem diluição podem obstruir a sonda." },
+      { "text": "Lavar a sonda com 20-30 ml de água antes e após a administração de dieta ou medicamentos.", "isCorrect": true, "rationale": "A lavagem (flush) garante que não haja resíduos de dieta ou medicamentos que possam secar e aderir à parede interna da sonda, causando obstrução." },
+      { "text": "Manter a sonda sempre clampada (fechada) quando não estiver em uso.", "isCorrect": false, "rationale": "Manter a sonda clampada aumenta o risco de refluxo." },
+      { "text": "Utilizar sonda de calibre fino em todos os pacientes.", "isCorrect": false, "rationale": "Sondas finas são mais confortáveis, mas mais propensas a obstrução, exigindo maior cuidado na lavagem." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "Lavar a sonda com água antes e após a administração de dieta/medicamentos é essencial." }
+    ]
+  },
+  {
+    "id": 50,
+    "question": "Qual a finalidade da 'Tabela de De Gotejamento' (Gotejamento de Soro)?",
+    "options": [
+      { "text": "Definir o tipo de solução a ser infundida.", "isCorrect": false, "rationale": "O tipo de solução é definido pela prescrição." },
+      { "text": "Calcular o número de gotas ou microgotas por minuto para garantir que o volume prescrito seja infundido no tempo correto.", "isCorrect": true, "rationale": "O cálculo de gotejamento é uma das habilidades essenciais do técnico, pois garante a administração segura e precisa do medicamento ou hidratação, evitando sobrecarga volêmica ou subdosagem." },
+      { "text": "Medir a pressão arterial do paciente.", "isCorrect": false, "rationale": "A pressão arterial é medida com esfigmomanômetro." },
+      { "text": "Monitorar a frequência cardíaca.", "isCorrect": false, "rationale": "A frequência cardíaca é monitorada por pulso ou monitor cardíaco." },
+      { "text": "Nenhuma das alternativas.", "isCorrect": false, "rationale": "A finalidade é calcular o gotejamento correto para que o volume seja infundido no tempo exato." }
+    ]
+  }
+]
