@@ -1,3 +1,6 @@
+// É obrigatório definir o nome do cache no topo!
+const CACHE_NAME = 'enferma-pro-v1';
+
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -9,14 +12,17 @@ const ASSETS_TO_CACHE = [
   './img/ebook01.pdf'
 ];
 
+// Instalação: Salva os arquivos no celular
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
+      console.log('Arquivos cacheando...');
       return cache.addAll(ASSETS_TO_CACHE);
     })
   );
 });
 
+// Ativação: Limpa caches antigos se você atualizar o app
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -31,6 +37,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+// Busca: Serve os arquivos do cache quando estiver sem internet
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
