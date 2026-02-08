@@ -1,7 +1,7 @@
 {
   "name": "Enfermagem Pro: Calculadoras e Simulados",
   "short_name": "EnfermaPro",
-  "start_url": "index.html",
+  "start_url": "./404.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
