@@ -1109,9 +1109,13 @@ document.addEventListener('DOMContentLoaded', () => {
     resetExplicacao('conversao');
 });
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
+  window.addEventListener('load', function() {
     navigator.serviceWorker.register('./sw.js')
-      .then(reg => console.log('App Enfermagem Pro pronto!', reg))
-      .catch(err => console.log('Erro ao registrar App:', err));
+      .then(function(registration) {
+        console.log('ServiceWorker registrado com sucesso:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Falha ao registrar o ServiceWorker:', error);
+      });
   });
 }
