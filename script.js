@@ -1121,6 +1121,6 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js')
       .then(reg => console.log('App Enfermagem Pro pronto!', reg))
-      .catch(err => console.log('Erro ao registrar App', err));
+      .catch(err => console.log('Erro ao registrar App:', err));
   });
 }
