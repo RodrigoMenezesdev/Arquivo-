@@ -1,4 +1,3 @@
-const CACHE_NAME = 'enf-pro-v1';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
