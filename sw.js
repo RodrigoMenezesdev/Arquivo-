@@ -1,6 +1,5 @@
 // É obrigatório definir o nome do cache no topo!
-const CACHE_NAME = 'enferma-pro-v1';
-
+const CACHE_NAME = 'enfermagem-pro-v1';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -8,8 +7,7 @@ const ASSETS_TO_CACHE = [
   './script.js',
   './manifest.json',
   './img/icon-192.png',
-  './img/icon-512.png',
-  './img/ebook01.pdf'
+  './img/icon-512.png'
 ];
 
 // Instalação: Salva os arquivos no celular
