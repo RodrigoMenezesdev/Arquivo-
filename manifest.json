@@ -1,8 +1,7 @@
 {
   "name": "Enfermagem Pro: Calculadoras e Simulados",
-  "short_name": "EnfPro",
-  "description": "Calculadoras de gotejamento, dosagem e simulados de enfermagem.",
-  "start_url": "./index.html",
+  "short_name": "EnfermaPro",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
