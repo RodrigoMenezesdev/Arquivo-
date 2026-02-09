@@ -192,10 +192,10 @@ document.addEventListener('DOMContentLoaded', function() {
         exitButton.addEventListener('click', function(event) {
             event.preventDefault(); // Impede que o link HTML padrão seja seguido
             
-            // SOLUÇÃO FINAL: Força o redirecionamento para o 404.html.
-            // O caminho '../404.html' navega um nível acima (pasta principal), 
+            // SOLUÇÃO FINAL: Força o redirecionamento para o index.html.
+            // O caminho '../index.html' navega um nível acima (pasta principal), 
             // corrigindo o erro de caminho para arquivos em subdiretórios.
-            window.location.href = '../404.html';
+            window.location.href = '../index.html';
         });
     }
     
