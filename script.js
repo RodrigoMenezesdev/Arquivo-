@@ -1110,12 +1110,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./sw.js')
-      .then(function(registration) {
-        console.log('ServiceWorker registrado com sucesso:', registration.scope);
+    // Note o ponto antes da barra, ele força o caminho relativo à pasta do GitHub
+    navigator.serviceWorker.register('./sw.js', { scope: './' })
+      .then(function(reg) {
+        console.log('ServiceWorker ativo na pasta:', reg.scope);
       })
-      .catch(function(error) {
-        console.log('Falha ao registrar o ServiceWorker:', error);
+      .catch(function(err) {
+        console.log('Erro crítico no registro:', err);
       });
   });
 }
