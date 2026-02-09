@@ -1108,15 +1108,9 @@ document.addEventListener('DOMContentLoaded', () => {
     resetExplicacao('insulina');
     resetExplicacao('conversao');
 });
+// No seu script.js (Raiz)
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    // Note o ponto antes da barra, ele força o caminho relativo à pasta do GitHub
-    navigator.serviceWorker.register('./sw.js', { scope: './' })
-      .then(function(reg) {
-        console.log('ServiceWorker ativo na pasta:', reg.scope);
-      })
-      .catch(function(err) {
-        console.log('Erro crítico no registro:', err);
-      });
-  });
+    navigator.serviceWorker.register('./sw.js')
+    .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+    .catch(err => console.log('Falha ao registrar:', err));
 }
