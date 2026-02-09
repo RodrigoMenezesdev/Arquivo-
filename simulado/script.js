@@ -249,8 +249,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (exitButton) {
         exitButton.addEventListener('click', function(event) {
             event.preventDefault(); 
-            // O caminho '../404.html' leva o usuário da subpasta 'simulado/' para o arquivo '404.html' na pasta raiz.
-            window.location.href = '../404.html';
+            // O caminho '../index.html' leva o usuário da subpasta 'simulado/' para o arquivo 'index.html' na pasta raiz.
+            window.location.href = '../index.html';
         });
     }
 
