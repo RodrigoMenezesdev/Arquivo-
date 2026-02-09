@@ -190,7 +190,8 @@ function updateNavigationButtons() {
 
 function exitQuiz() {
     if (confirm("⚠️ Sair do simulado? O progresso será perdido.")) {
-        window.location.href = "../404.html";
+        // Isso faz o navegador sair da pasta 'simulado-tec' e voltar para a raiz
+        window.location.href = "../index.html"; 
     }
 }
 
