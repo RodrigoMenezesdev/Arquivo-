@@ -1110,7 +1110,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // No seu script.js (Raiz)
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
+    // Forçar o registo no caminho atual
+navigator.serviceWorker.register('./sw.js', { scope: './' })
     .then(reg => console.log('Service Worker registrado com sucesso!', reg))
     .catch(err => console.log('Falha ao registrar:', err));
 }
