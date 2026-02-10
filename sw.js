@@ -1,13 +1,13 @@
 // É obrigatório definir o nome do cache no topo!
-const CACHE_NAME = 'enfermagem-pro-v1';
+const CACHE_NAME = 'enfermagem-pro-v2'; // Mude para v2 para forçar a atualização!
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './style.css',
   './script.js',
   './manifest.json',
-  './img/icon-192.png',
-  './img/icon-512.png'
+  './img/ico-192.png', // Nome novo aqui
+  './img/ico-512.png'  // Nome novo aqui
 ];
 
 // Instalação: Salva os arquivos no celular
