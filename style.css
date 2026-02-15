@@ -45,12 +45,15 @@ header h1 {
     margin-left: auto; 
     max-width: 900px;
     margin-right: auto;
-    padding: 110px 15px 0 15px; 
+    /* Ajustado: padding lateral menor para não espremer no mobile */
+    padding: 110px 10px 0 10px; 
 }
+
 
 .module-section {
     background-color: white;
-    padding: 25px;
+    /* Ajustado: padding interno menor (15px) para ganhar espaço */
+    padding: 20px 15px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
@@ -58,6 +61,7 @@ header h1 {
     box-sizing: border-box; 
     width: 100%; 
 }
+
 
 .module-section h2 {
     color: #007bff;
@@ -640,21 +644,27 @@ footer {
     .bh-grid { flex-direction: column; }
     .nav-menu { flex-wrap: wrap; justify-content: center; }
     .nav-menu a { margin: 5px; font-size: 0.8em; }
-    .container { padding-top: 150px; } 
+    
+    /* Ajustes para a caixa não ficar estreita */
+    .container { 
+        padding-top: 150px; 
+        padding-left: 5px; 
+        padding-right: 5px; 
+    } 
+
+    .module-section {
+        padding: 15px 10px; /* Mais espaço para o texto no celular */
+        width: 100%;
+    }
+
+    .bonus-button {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
     .flashcard-controls { flex-direction: column; }
     .quiz-controls { flex-direction: column-reverse; }
     .conversion-row { flex-wrap: wrap; }
     header h1 { font-size: 1.4em; }
-}
-
-/* Animações da Tela de Saída */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
+    }
+        
