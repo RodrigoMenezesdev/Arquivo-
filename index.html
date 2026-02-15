@@ -489,5 +489,497 @@
 
         <script src="./script.js"></script>
 
+    </<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfermagem Pro: Calculadoras e Simulado</title>
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="saida-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: 9999; flex-direction: column; align-items: center; justify-content: center; transition: opacity 0.5s ease;">
+        <img src="img/ico-192.png" alt="Logo Enfermagem Pro" style="width: 120px; margin-bottom: 20px; animation: pulse 2s infinite;">
+        <h2 style="color: #007bff; font-family: sans-serif;">Até logo!</h2>
+        <p style="color: #666;">
+            Obrigado por estudar com o <strong>Enfermagem Pro</strong>.
+        </p>
+        <div style="margin-top: 20px; width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #007bff; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+
+
+    <header>
+        <button id="menu-toggle" class="menu-toggle-button" aria-expanded="false" aria-controls="sidebar-menu" aria-label="Abrir Menu de Navegação">
+            ☰
+        </button>
+
+        <nav id="sidebar-menu" class="sidebar-menu" role="navigation" aria-label="Menu Principal">
+            <button id="close-menu" class="close-menu-button" aria-label="Fechar Menu" onclick="toggleSidebar()">
+                &times;
+            </button>
+            <div class="menu-header">
+                <h3>Navegação Rápida</h3>
+            </div>
+            <ul>
+                <li><a href="#gotejamento" onclick="closeSidebar(event)">💧 Cálculo de Gotejamento</a></li>
+                <li><a href="#dosagem" onclick="closeSidebar(event)">💊 Cálculo de Diluição/Dosagem</a></li>
+                <li><a href="#balanco-hidrico" onclick="closeSidebar(event)">⚖️ Cálculo de Balanço Hídrico (BH)</a></li>
+
+                <li class="menu-separator">Calculadoras Adicionais:</li>
+                <li><a href="#adicionais-pediatrica" onclick="closeSidebar(event)">➕ Dose Pediátrica</a></li>
+                <li><a href="#adicionais-insulina" onclick="closeSidebar(event)">➕ Cálculo de Insulina</a></li>
+                <li><a href="#adicionais-conversao" onclick="closeSidebar(event)">➕ Conversão de Unidades</a></li>
+
+                <li class="menu-separator">Módulos de Estudo:</li>
+                <li><a href="#flashcards" onclick="closeSidebar(event)">💡 Flashcards de Enfermagem</a></li>
+                <li><a href="#simulado" onclick="closeSidebar(event)">📝 Simulado Rápido de 100 Questões</a></li>
+                <li><a href="#primeiros-socorros" onclick="closeSidebar(event)">🚑 Manobra de Heimlich</a></li>
+
+                <li class="menu-separator">📚 Vídeo-Aulas:</li>
+                <li>
+                    <a href="https://www.youtube.com/playlist?list=PL_rQTI99G4P_jN5s44ttOA_ZmbFpHMRQF" target="_blank" onclick="closeSidebar(event)">
+                        🚑 Playlist: Primeiros Socorros
+                    </a>
+                </li>
+
+            </section>
+
+            <hr>
+
+            <li>
+                <a href="#simulado-50" onclick="closeSidebar(event)" style="color: #00d1ff; font-weight: bold;">
+                    🔥 NOVO: Simulado 50 Questões
+                </a>
+            </li>
+
+            <li class="menu-separator">Bônus:</li>
+            <li><a href="#acesso-simulados" onclick="closeSidebar(event)">🎯 Treino Avançado de Cálculos</a></li>
+            <li><a href="#bonus-ebook" onclick="closeSidebar(event)">🎁 E-book Guia do Aprovado</a></li>
+
+            <li class="logout-item">
+                <a href="#" onclick="executarSaida(event)">
+                    🚪 Sair do Aplicativo
+                </a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+
+    <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+    <h1>🔬 Enfermagem Pro: Calculadoras e Simulado</h1>
+</header>
+
+<main id="main-content" role="main">
+    <div class="container">
+
+        <section id="gotejamento" class="module-section" aria-labelledby="gotejamento-title">
+            <h2 id="gotejamento-title">💧 1. Calculadora de Gotejamento</h2>
+            <div class="input-group">
+                <label for="volume">Volume Total (mL):</label>
+                <input type="number" id="volume" value="500" placeholder="Ex: 500 mL" min="1" required aria-describedby="volume-hint">
+                <p id="volume-hint" class="visually-hidden">
+                    Insira o volume total em mililitros.
+                </p>
+            </div>
+            <div class="input-group">
+                <label for="tempo">Tempo de Infusão (horas):</label>
+                <input type="number" id="tempo" value="6" placeholder="Ex: 6 horas" min="1" required aria-describedby="tempo-hint">
+                <p id="tempo-hint" class="visually-hidden">
+                    Insira o tempo de infusão em horas.
+                </p>
+            </div>
+            <button class="button primary-button" onclick="calcularGotejamento()">Calcular Gotejamento</button>
+            <div id="resultado" class="result-box" role="status" aria-live="polite">
+                Insira os valores e clique em calcular.
+            </div>
+            <button class="explanation-toggle" onclick="toggleExplicacao('gotejamento')" aria-expanded="false" aria-controls="explicacao-gotejamento">
+                Mostrar Explicação
+            </button>
+            <div id="explicacao-gotejamento" class="explanation-box" style="display: none;">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="dosagem" class="module-section" aria-labelledby="dosagem-title">
+            <h2 id="dosagem-title">💊 2. Calculadora de Diluição/Dosagem</h2>
+            <p class="formula-info">
+                (Regra de Três: Prescrito / Disponível = Volume a Aspirar)
+            </p>
+
+            <h3>Informações do Medicamento</h3>
+            <div class="input-group">
+                <label for="disponivel_mg">Disponível no Frasco (mg):</label>
+                <input type="number" id="disponivel_mg" value="1000" placeholder="Ex: 1000 mg" min="0.1" required>
+            </div>
+            <div class="input-group">
+                <label for="disponivel_ml">Volume de Diluição (mL):</label>
+                <input type="number" id="disponivel_ml" value="5" placeholder="Ex: 5 mL" min="0.1" required>
+            </div>
+
+            <h3>Prescrição</h3>
+            <div class="input-group">
+                <label for="prescrito_mg">Prescrito para o Paciente (mg):</label>
+                <input type="number" id="prescrito_mg" value="250" placeholder="Ex: 250 mg" min="0.1" required>
+            </div>
+
+            <button class="button primary-button" onclick="calcularDosagem()">Calcular Volume a Aspirar</button>
+
+            <div id="resultado-dosagem" class="result-box" role="status" aria-live="polite">
+                Insira os valores e clique em calcular.
+            </div>
+            <button class="explanation-toggle" onclick="toggleExplicacao('dosagem')" aria-expanded="false" aria-controls="explicacao-dosagem">
+                Mostrar Explicação
+            </button>
+            <div id="explicacao-dosagem" class="explanation-box" style="display: none;">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="balanco-hidrico" class="module-section bh-section" aria-labelledby="bh-title">
+            <h2 id="bh-title">⚖️ 3. Calculadora de Balanço Hídrico (BH)</h2>
+            <p class="bh-example-box">
+                **Lembrete Clínico:** Balanço Hídrico (BH) = Total de Ingestas - Total de Eliminações.
+            </p>
+
+            <div class="bh-grid">
+
+                <div class="bh-column ingestas-column">
+                    <h3>INGESTAS (Entradas)</h3>
+                    <div class="input-group bh-next-question">
+                        <label for="ev">Endovenosa (EV) (mL):</label>
+                        <input type="number" id="ev" value="1500" placeholder="Ex: 1500 mL (Soro)" min="0" oninput="atualizarTotalIngestas()">
+                    </div>
+                    <div class="input-group">
+                        <label for="vo">Via Oral (VO) (mL):</label>
+                        <input type="number" id="vo" value="300" placeholder="Ex: 300 mL (Água/Chá)" min="0" oninput="atualizarTotalIngestas()">
+                    </div>
+                    <div class="input-group">
+                        <label for="sng">Sonda Nasogástrica (SNG) (mL):</label>
+                        <input type="number" id="sng" value="0" placeholder="Ex: 0 mL (Dieta)" min="0" oninput="atualizarTotalIngestas()">
+                    </div>
+                    <div class="input-group">
+                        <label for="outras_ingestas">Outras Ingestas (mL):</label>
+                        <input type="number" id="outras_ingestas" value="100" placeholder="Ex: 100 mL (Medicações)" min="0" oninput="atualizarTotalIngestas()">
+                    </div>
+                    <div id="total-ingestas-display" class="bh-total" role="status">
+                        Total Ingestas: 1900 mL
+                    </div>
+                </div>
+
+                <div class="bh-column eliminacoes-column">
+                    <h3>ELIMINAÇÕES (Saídas)</h3>
+                    <div class="input-group">
+                        <label for="diurese">Diurese (mL):</label>
+                        <input type="number" id="diurese" value="1200" placeholder="Ex: 1200 mL (Urina)" min="0" oninput="atualizarTotalEliminacoes()">
+                    </div>
+                    <div class="input-group">
+                        <label for="drenos">Drenos/Sondas (mL):</label>
+                        <input type="number" id="drenos" value="200" placeholder="Ex: 200 mL (Dreno de Tórax)" min="0" oninput="atualizarTotalEliminacoes()">
+                    </div>
+                    <div class="input-group">
+                        <label for="vomitos">Vômitos/Aspirações (mL):</label>
+                        <input type="number" id="vomitos" value="150" placeholder="Ex: 150 mL (Vômito)" min="0" oninput="atualizarTotalEliminacoes()">
+                    </div>
+                    <div class="input-group">
+                        <label for="outras_eliminacoes">Outras Eliminações (mL):</label>
+                        <input type="number" id="outras_eliminacoes" value="50" placeholder="Ex: 50 mL (Diarréia)" min="0" oninput="atualizarTotalEliminacoes()">
+                    </div>
+                    <div id="total-eliminacoes-display" class="bh-total" role="status">
+                        Total Eliminações: 1600 mL
+                    </div>
+                </div>
+            </div>
+
+            <button class="button primary-button bh-button" onclick="calcularBalançoHidrico()">Calcular Balanço Hídrico Final</button>
+            <div id="resultado-bh" class="result-box" role="status" aria-live="polite">
+                O Balanço Hídrico será exibido aqui.
+            </div>
+            <button class="explanation-toggle" onclick="toggleExplicacao('bh')" aria-expanded="false" aria-controls="explicacao-bh">
+                Mostrar Explicação
+            </button>
+            <div id="explicacao-bh" class="explanation-box" style="display: none;">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="adicionais" class="module-section" aria-labelledby="adicionais-title">
+            <h2 id="adicionais-title">➕ 4. Calculadoras Adicionais</h2>
+
+            <div id="adicionais-pediatrica">
+                <h3>Dose Pediátrica (mg)</h3>
+                <div class="input-group">
+                    <label for="dose-recomendada">Dose Recomendada (mg/Kg):</label>
+                    <input type="number" id="dose-recomendada" value="15" placeholder="Ex: 15 mg/Kg" min="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="peso-crianca">Peso da Criança (Kg):</label>
+                    <input type="number" id="peso-crianca" value="10" placeholder="Ex: 10 Kg" min="0.1">
+                </div>
+                <button class="button control-button" onclick="calcularDosePediatrica()">Calcular Dose Total</button>
+                <div id="resultado-pediatrica" class="result-box" role="status" aria-live="polite"></div>
+                <button class="explanation-toggle" onclick="toggleExplicacao('pediatrica')" aria-expanded="false" aria-controls="explicacao-pediatrica">
+                    Mostrar Explicação
+                </button>
+                <div id="explicacao-pediatrica" class="explanation-box" style="display: none;">
+                </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <div id="adicionais-insulina">
+                <h3>Cálculo de Insulina (mL)</h3>
+                <div class="input-group">
+                    <label for="unidades-prescritas">Unidades Prescritas (U):</label>
+                    <input type="number" id="unidades-prescritas" value="40" placeholder="Ex: 40 U" min="1">
+                </div>
+                <div class="input-group">
+                    <label for="unidades-ml">Concentração do Frasco (U/mL):</label>
+                    <input type="number" id="unidades-ml" value="100" placeholder="Ex: 100 U/mL (padrão)" min="1">
+                </div>
+                <button class="button control-button" onclick="calcularInsulina()">Calcular Volume de Insulina</button>
+                <div id="resultado-insulina" class="result-box" role="status" aria-live="polite"></div>
+                <button class="explanation-toggle" onclick="toggleExplicacao('insulina')" aria-expanded="false" aria-controls="explicacao-insulina">
+                    Mostrar Explicação
+                </button>
+                <div id="explicacao-insulina" class="explanation-box" style="display: none;">
+                </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <div id="adicionais-conversao">
+                <h3>Conversão de Unidades (g, mg, mcg)</h3>
+                <div class="conversion-row">
+                    <div class="input-group conversion-group">
+                        <label for="valor-converter">Valor:</label>
+                        <input type="number" id="valor-converter" value="1" placeholder="Ex: 1.5" min="0.001" oninput="converterUnidades()">
+                    </div>
+                    <div class="input-group conversion-group">
+                        <label for="unidade-origem">De:</label>
+                        <select id="unidade-origem" onchange="converterUnidades()">
+                            <option value="g">Gramas (g)</option>
+                            <option value="mg" selected>Miligramas (mg)</option>
+                            <option value="mcg">Microgramas (mcg)</option>
+                        </select>
+                    </div>
+                    <span class="conversion-arrow" aria-hidden="true">→</span>
+                    <div class="input-group conversion-group">
+                        <label for="unidade-destino">Para:</label>
+                        <select id="unidade-destino" onchange="converterUnidades()">
+                            <option value="g">Gramas (g)</option>
+                            <option value="mg">Miligramas (mg)</option>
+                            <option value="mcg" selected>Microgramas (mcg)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="resultado-conversao" class="result-box" role="status" aria-live="polite"></div>
+                <button class="explanation-toggle" onclick="toggleExplicacao('conversao')" aria-expanded="false" aria-controls="explicacao-conversao">
+                    Mostrar Explicação
+                </button>
+                <div id="explicacao-conversao" class="explanation-box" style="display: none;">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="acesso-simulados" class="module-section bonus-module" aria-labelledby="treino-title">
+            <h2 id="treino-title">🎯 Módulos de Treino Dedicados (Simulado e Cálculos)</h2>
+            <p class="module-description">
+                Acesse aqui o **simulado de 10 questões (Módulo 6)** e o **treino intensivo das 6 fórmulas de cálculo (Módulo 7)**.
+            </p>
+
+            <a href="simulado/index.html" target="_blank" rel="noopener noreferrer" class="button primary-button bonus-button">
+                ACESSAR MÓDULOS DE TREINO DAS CÁLCULADORAS
+                AVANÇADO
+            </a>
+            <p class="small-text-hint">
+                (Abre em uma nova aba para focar 100% no estudo)
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="flashcards" class="module-section flashcard-section" aria-labelledby="flashcards-title">
+            <h2 id="flashcards-title">💡 5. Flashcards de Enfermagem (100 Conceitos)</h2>
+
+            <div class="card-filter-group">
+                <label for="card-category">Filtrar por Categoria:</label>
+                <select id="card-category" onchange="filtrarCards(this.value)" aria-label="Filtrar Flashcards por Categoria">
+                    <option value="Todos os Conceitos">Todos os Conceitos</option>
+                    <option value="Anatomia/Fisiologia">Anatomia/Fisiologia</option>
+                    <option value="Patologia">Patologia</option>
+                    <option value="Sinais Vitais">Sinais Vitais</option>
+                    <option value="Terminologia">Terminologia</option>
+                    <option value="Farmacologia">Farmacologia</option>
+                    <option value="Procedimentos">Procedimentos</option>
+                    <option value="Fundamentos">Fundamentos</option>
+                    <option value="SUS/Legislação">SUS/Legislação</option>
+                    <option value="Biossegurança">Biossegurança</option>
+                </select>
+            </div>
+
+            <div id="flashcard-wrapper" onclick="virarCard()" role="button" tabindex="0" aria-label="Flashcard: Clique para ver a resposta ou voltar">
+                <div id="flashcard" class="flashcard-box">
+                    <div class="card-face card-front">
+                        <h3>Pergunta</h3>
+                        <p id="card-question">
+                            Carregando...
+                        </p>
+                        <p class="card-hint">
+                            (Clique para ver a resposta)
+                        </p>
+                    </div>
+                    <div class="card-face card-back">
+                        <h3>Resposta</h3>
+                        <p id="card-answer">
+                            Carregando...
+                        </p>
+                        <p class="card-hint">
+                            (Clique para voltar)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-controls">
+                <button class="button control-button" onclick="embaralhar()">Embaralhar</button>
+                <button class="button primary-button" onclick="proximoCard(event)">Próximo Conceito</button>
+            </div>
+
+            5                <section id="primeiros-socorros" class="module-section" aria-labelledby="socorros-title">
+                <h2 id="socorros-title">🚑 5.1 Procedimentos: Manobra de Heimlich</h2>
+                <p class="module-description">
+                    Aprenda a técnica correta para desengasgo em adultos, conforme as orientações oficiais do <strong>Ministério da Saúde</strong>.
+                </p>
+
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <iframe
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        src="https://www.youtube.com/embed/PyMq2iDMEkI"
+                        title="Manobra de Heimlich - Ministério da Saúde"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div style="margin-top: 15px; padding: 15px; background-color: #f8f9fa; border: 1px solid #007bff; border-left: 5px solid #007bff; border-radius: 8px; color: #333; text-align: center;">
+                    <p style="margin: 0; font-size: 1.05em;">
+                        ⚠️ <strong>Dica de Estudo:</strong>
+                    </p>
+                    <p style="margin: 5px 0 0 0;">
+                        Confira a playlist completa de Primeiros Socorros no <strong>Menu Lateral ☰</strong>.
+                    </p>
+                </div>
+
+                <section id="simulado-50" class="module-section" style="background-color: #f0f7ff; border: 2px solid #007bff; border-radius: 12px; padding: 25px; text-align: center; margin: 30px 0;">
+                    <h2 style="color: #007bff; margin-bottom: 15px;">🚀 Simulado Preparatório Completo</h2>
+                    <p style="font-size: 1.1em; color: #333; margin-bottom: 20px;">
+                        Treine agora com o simulado focado em <strong>Técnico de Enfermagem</strong> contendo 50 questões fundamentais para sua aprovação.
+                    </p>
+
+                    <a href="simulado-tec/404.html"
+                        class="button primary-button"
+                        style="text-decoration: none; border-radius: 30px;">
+                        📝 INICIAR SIMULADO (50 QUESTÕES)
+                    </a>
+
+                </section>
+
+                <hr>
+
+                <section id="simulado" class="module-section quiz-container" aria-labelledby="simulado-title">
+                    <h2 id="simulado-title">📝 6. Simulado Rápido de 100 Questões</h2>
+
+                    <div class="quiz-status" role="status" aria-live="polite">
+                        <span>Questão: <span id="current-question-index">0</span> / <span id="total-questions">100</span></span>
+                        <span>Pontuação: <span id="score">0</span></span>
+                    </div>
+
+                    <div id="question-area">
+                        <p id="question-text" class="question-title">
+                            Clique em Iniciar Simulado!
+                        </p>
+
+                        <div id="options-container" class="options-grid" role="radiogroup" aria-label="Opções de Resposta">
+                        </div>
+
+                        <div id="feedback-message" class="feedback-box" role="alert" aria-live="assertive">
+                        </div>
+                    </div>
+
+                    <div class="quiz-controls">
+                        <button id="end-quiz-button" class="button control-button" style="display:none;" disabled>
+                            Encerrar Simulado
+                        </button>
+                        <button id="next-question-button" class="button primary-button" onclick="startQuiz()">
+                            Iniciar Simulado
+                        </button>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="bonus-ebook" class="module-section bonus-module" aria-labelledby="ebook-title">
+                    <h2 id="ebook-title">🎁 7. BÔNUS EXCLUSIVO: E-book do Aprovado!</h2>
+                    <p>
+                        Parabéns! Você desbloqueou seu material extra de estudos focado em concursos do Rio de Janeiro (RioSaúde, UPAs e CERS).
+                    </p>
+                    <div class="result-box ebook-box">
+                        <h3>TÉCNICO de Enfermagem RJ: O Guia do Aprovado!</h3>
+                        <ul>
+                            <li>MÓDULO 1: Fundamentos Éticos e Legais (Lei 7.498/86 e Código de Ética).</li>
+                            <li>MÓDULO 2: Sistema Único de Saúde (SUS) e Leis 8.080/90 e 8.142/90.</li>
+                            <li>MÓDULO 3: Atenção Básica (PNAB) e Estrutura de Saúde do RJ (Clínicas da Família, UPAS).</li>
+                            <li>MÓDULO 4: Procedimentos e Cálculos Críticos (Regra dos 9 Certos, Fórmulas de Gotejamento, Biossegurança).</li>
+                            <li>MÓDULO 5: Questões de Fixação e Gabarito Comentado.</li>
+                        </ul>
+                    </div>
+                    <a href="img/ebook01.pdf" target="_blank" rel="noopener noreferrer" class="button primary-button bonus button">
+                        📥 CLIQUE AQUI PARA BAIXAR SEU
+                        E-BOOK COMPLETO
+                    </a>
+                    <p class="small-text-hint">
+                    </p>
+                </section>
+
+            </div>
+        </main>
+        <section class="module-section" style="background-color: #f1f3f5; border-radius: 8px; padding: 15px; margin-top: 40px;">
+            <h4 style="color: #495057; margin-bottom: 8px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                📌 Créditos e Fontes
+            </h4>
+            <p style="font-size: 0.85rem; color: #6c757d; line-height: 1.4;">
+                Todo o conteúdo audiovisual de Primeiros Socorros exibido neste aplicativo é produzido pelo <strong>Ministério da Saúde do Brasil (Canal Oficial SAMU 192)</strong>.
+                Este aplicativo atua como um facilitador de acesso a esses manuais públicos, respeitando os direitos autorais e mantendo a integridade das informações originais.
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2025 Enfermagem Pro - Desenvolvimento para Estudos.
+            </p>
+            <p style="font-size: 0.8rem; margin-top: 5px;">
+                Dúvidas ou parcerias? <a href="mailto:rodrigomenezesdev@gmail.com" style="color: #007bff; text-decoration: none;">rodrigomenezesdev@gmail.com</a>
+            </p>
+        </footer>
+
+        <script src="./script.js"></script>
+
     </body>
+</html>>
 </html>
