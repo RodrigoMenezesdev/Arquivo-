@@ -1115,3 +1115,40 @@ navigator.serviceWorker.register('./sw.js', { scope: './' })
     .then(reg => console.log('Service Worker registrado com sucesso!', reg))
     .catch(err => console.log('Falha ao registrar:', err));
 }
+// =========================================================
+// FUNÇÃO DE SAÍDA COM TELA DE DESPEDIDA
+// =========================================================
+
+function executarSaida(event) {
+    if (event) event.preventDefault(); 
+
+    const telaSaida = document.getElementById('saida-overlay');
+    const sidebar = document.getElementById('sidebar-menu');
+    
+    // 1. Fecha o menu lateral imediatamente (usando a sua classe 'open')
+    if (sidebar) {
+        sidebar.classList.remove('open');
+    }
+
+    // 2. Mostra a tela de despedida
+    if (telaSaida) {
+        telaSaida.style.display = 'flex';
+        // Pequeno delay para a transição de opacidade funcionar
+        setTimeout(() => {
+            telaSaida.style.opacity = '1';
+        }, 10);
+    }
+
+    // 3. Após 2.5 segundos, limpa a tela e volta ao topo
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        if (telaSaida) {
+            telaSaida.style.opacity = '0';
+            // Esconde o elemento após a animação de sumir
+            setTimeout(() => {
+                telaSaida.style.display = 'none';
+            }, 500);
+        }
+    }, 2500);
+}
