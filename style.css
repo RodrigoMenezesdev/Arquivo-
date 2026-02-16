@@ -668,3 +668,6 @@ footer {
     header h1 { font-size: 1.4em; }
     }
         
+footer {
+    padding-bottom: 70px; /* Garante que o banner não cubra o rodapé */
+}
