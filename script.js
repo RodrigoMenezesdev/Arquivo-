@@ -2,6 +2,30 @@
 // FUNÇÕES PARA O MENU DE NAVEGAÇÃO LATERAL
 // =========================================================
 
+// ... (suas funções atuais de menu aqui) ...
+
+// =========================================================
+// CONFIGURAÇÃO DO ADMOB (COLE AQUI)
+// =========================================================
+
+function inicializarBannerAdMob() {
+    const adUnitId = "ca-app-pub-5540695475143286/3848446634";
+    
+    // Verifica se o plugin de anúncios existe (comum em WebViews/Cordova)
+    if (window.admob || window.AdMob) {
+        const ad = window.admob || window.AdMob;
+        ad.createBanner({
+            adId: adUnitId,
+            position: "bottom", // banner no rodapé
+            autoShow: true
+        });
+    }
+}
+
+// Executa a inicialização quando o app carregar
+document.addEventListener("deviceready", inicializarBannerAdMob, false);
+document.addEventListener("DOMContentLoaded", inicializarBannerAdMob);
+
 // Função para abrir/fechar o menu lateral
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar-menu');
